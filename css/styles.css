@@ -329,7 +329,7 @@ section > div {
     padding: 20px 10px 5px 10px;
   }
   .header {
-    padding: 20px 0px 0px 20px;
+    padding: 20px 0px 0px 15px !important;
   }
   .header > div {
     width: auto !important;
