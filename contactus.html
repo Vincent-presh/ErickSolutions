@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erick Solutions</title>
+    <meta name="description" content="Erick Solutions" />
+    <meta name="author" content="Erick Solutions" />
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sura&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Wire+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rationale&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+<style>
+    body{
+        overflow-y: scroll;
+    }
+</style>
+  <body style="background: url(images/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg); background-size:cover;">
+    <div class="cursor"></div>
+    <div class="overlay">
+      <div class="circle outer">
+        <div class="circle inner"></div>
+      </div>
+    </div>
+    -->
+    <div class="header">
+      <div class="header-12">
+        <span> ERICK SOLUTIONS </span>
+      </div>
+    </div>
+
+    <div class="contact-left">
+        Lets help you get your business or idea running
+    </div>
+    <div class="contact-con">
+        <div class="container form">
+            <form>
+                <input placeholder="First Name or Business Name" type="text" required/>
+                <input placeholder="Email" type="email" required/>
+                <textarea class="descr" placeholder="Project Description" required></textarea>
+                <input class="" placeholder="Budget Range in Naira" type="number" required/>
+                <input class="submit" placeholder="Submit" type="submit"/>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-12"></div>
+        <div class="footer-12 tag">Copyright @ErickSolutions</div>
+      </div>
+  </body>
+  <script>
+    const cursor = document.querySelector(".cursor");
+    document.addEventListener("mousemove", (e) => {
+      cursor.setAttribute(
+        "style",
+        "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+      );
+    });
+    document.addEventListener("click", () => {
+      cursor.classList.add("expand");
+
+      setTimeout(() => {
+        cursor.classList.remove("expand");
+      }, 500);
+    });
+  </script>
+
+</html>
