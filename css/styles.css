@@ -328,6 +328,9 @@ section > div {
     justify-content: center;
     padding: 20px 10px 5px 10px;
   }
+  .header {
+    padding: 20px 0px 0px 20px;
+  }
   .header > div {
     width: auto !important;
   }
@@ -346,8 +349,8 @@ section > div {
     justify-content: right;
   }
   .header-12 {
-    padding-right: 5px;
-    text-align: left;
+    padding-right: 0px;
+    text-align: center;
   }
   .slides {
     max-height: 90vh;
