@@ -334,13 +334,8 @@ section > div {
   .header > div {
     width: auto !important;
   }
-  nav {
-    margin: auto;
-    width: 120px;
-  }
-  nav > a {
-    float: right;
-    margin-right: 0% !important;
+  .header > div:nth-of-type(1) {
+    flex-basis: 80%;
   }
   .header-13,
   .header-12,
