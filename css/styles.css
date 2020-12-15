@@ -346,7 +346,7 @@ section > div {
   }
   .header-12 {
     padding-right: 20px;
-    text-align: center;
+    text-align: left;
   }
   .slides {
     max-height: 90vh;
