@@ -1,0 +1,282 @@
+body {
+  margin: 0%;
+  padding: 0ch;
+}
+#e1_3 {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#e1_4 {
+  opacity: 1;
+  width: 100%;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+#e1_6 {
+  opacity: 1;
+  width: 560px;
+  height: 61px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+#e1_8 {
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  width: 291px;
+  height: 30px;
+  position: absolute;
+  left: 28px;
+  top: 30px;
+  font-family: Sura;
+  text-align: left;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: undefined;
+}
+#e1_7 {
+  opacity: 1;
+  width: 560px;
+  height: 61px;
+  position: absolute;
+  left: 570px;
+  top: 10px;
+}
+#e6_6 {
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 65px;
+  top: 35px;
+}
+#e6_7 {
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+}
+#e6_8 {
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+#e6_9 {
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 176px;
+  top: 35px;
+}
+#e6_10 {
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+#e6_11 {
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+}
+#e6_12 {
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 287px;
+  top: 35px;
+}
+#e6_13 {
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+#e6_14 {
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  width: 22.032917022705078px;
+  height: 21.90015983581543px;
+  position: absolute;
+  left: 0.9556271433830261px;
+  top: 1.0998414754867554px;
+}
+#e1_5 {
+  opacity: 1;
+  width: 100%;
+  height: 522px;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  left: 0px;
+  top: 84px;
+}
+#e2_0 {
+  opacity: 1;
+  width: 50%;
+  height: 483px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+#e2_2 {
+  text-shadow: 0px 6px 10px rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  width: 325px;
+  height: 238px;
+  position: absolute;
+  left: 48px;
+  top: 136px;
+  font-family: Wire One;
+  text-align: left;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: undefined;
+}
+#e14_38 {
+  background-color: inherit;
+  opacity: 1;
+  width: 574px;
+  height: 483px;
+  position: absolute;
+  left: 541px;
+  top: 20px;
+}
+#e19_2 {
+  opacity: 1;
+  width: 593px;
+  height: 483px;
+  position: absolute;
+  left: -19px;
+  top: 0px;
+  background-image: url(images/elaptop_bounce_1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#e14_20 {
+  opacity: 1;
+  width: 1152px;
+  height: 75px;
+  position: absolute;
+  left: 0px;
+  top: 625px;
+}
+#e14_21 {
+  opacity: 1;
+  width: 440px;
+  height: 63px;
+  position: absolute;
+  left: 0px;
+  top: 6px;
+}
+#e14_22 {
+  border-radius: 500px;
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 101px;
+  top: 24px;
+}
+#e14_23 {
+  border-radius: 500px;
+  background-color: rgba(
+    77.56250202655792,
+    69.80625182390213,
+    69.80625182390213,
+    1
+  );
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 148px;
+  top: 24px;
+}
+#e14_24 {
+  border-radius: 500px;
+  background-color: rgba(
+    77.56250202655792,
+    69.80625182390213,
+    69.80625182390213,
+    1
+  );
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 195px;
+  top: 24px;
+}
+#e14_25 {
+  border-radius: 500px;
+  background-color: rgba(
+    77.56250202655792,
+    69.80625182390213,
+    69.80625182390213,
+    1
+  );
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 242px;
+  top: 24px;
+}
+#e14_26 {
+  opacity: 1;
+  width: 153px;
+  height: 61px;
+  position: absolute;
+  left: 450px;
+  top: 6px;
+}
+#e14_27 {
+  opacity: 1;
+  width: 471px;
+  height: 61px;
+  position: absolute;
+  left: 613px;
+  top: 6px;
+}
+#e14_28 {
+  color: rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+  opacity: 1;
+  width: 434px;
+  height: 21px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-family: Rationale;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: undefined;
+}

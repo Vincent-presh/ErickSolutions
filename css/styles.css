@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+  padding: 0%;
+  background: black;
+  position: absolute;
+  cursor: pointer;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+.cursor {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  z-index: 4;
+  pointer-events: none;
+  background: transparent;
+  border: 2px dotted white;
+  border-radius: 50%;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursAnim 0.5s infinite alternate;
+}
+.cursor::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 8px solid gray;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
+  animation: cursAnim2 0.5s infinite alternate;
+}
+
+@keyframes cursAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+@keyframes cursAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+@keyframes cursAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursAnim3 0.5s forwards;
+  border: 1px solid orangered;
+}
+
+.header,
+.footer {
+  max-width: 100vw;
+}
+
+.main {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+.overlay {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background: black;
+  height: 100%;
+  max-height: 100vh;
+  animation: Fadeout 2s 3s linear forwards;
+}
+.circle {
+  border-radius: 50px;
+}
+.outer {
+  position: absolute; /*Can also be `fixed`*/
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 80px;
+  width: 80px;
+  padding: 7px;
+  background: inherit;
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  margin: auto;
+  animation: rotation 2s infinite linear, bounce 1s 2.1s forwards,
+    zoominFadeout 2s 3s linear forwards;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes zoominFadeout {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    display: block;
+    visibility: visible;
+  }
+  50% {
+    transform: scale(100);
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
+@keyframes Fadeout {
+  from {
+    opacity: 1;
+    display: block;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
+.inner {
+  height: 15px;
+  width: 15px;
+  background: inherit;
+  margin: auto;
+}
+* {
+  box-sizing: border-box;
+}
+.header {
+  position: fixed;
+  height: 80px;
+  padding: 20px 0px 0px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.header > div {
+  height: 100%;
+  width: 50%;
+}
+.header-12 {
+  color: white;
+  font-family: Sura;
+  text-align: left;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: undefined;
+}
+
+.header-13 > nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px 0px 0px;
+}
+nav > a {
+  margin: auto;
+}
+
+.middle {
+  position: absolute;
+  top: 81px;
+  min-height: 550px;
+  height: fit-content;
+  width: 100%;
+}
+.middle > div {
+  position: absolute;
+  display: none;
+  width: 100vw;
+  transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 400ms;
+  animation-delay: 0s;
+  animation-duration: 0.9s; /* don't forget to set a duration! */
+}
+.slide_out {
+  animation: fadeOutLeft; /* referring directly to the animation's @keyframe declaration */
+
+  animation-duration: 0.6s;
+}
+section {
+  position: relative;
+  padding: 0px 30px;
+  width: 100%;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: row;
+}
+section > div {
+  position: relative;
+  float: left;
+  text-shadow: 0px 6px 10px rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 1);
+  justify-content: center;
+  font-family: Wire One;
+  text-align: left;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: 64px;
+}
+.middle-12.center {
+  padding: 25vh 20px;
+  width: 40%;
+  height: 483px;
+}
+.middle-12.floating-image {
+  width: 60%;
+  max-width: 476px;
+  margin: auto;
+  height: auto;
+  max-height: 573px;
+}
+.textr {
+  color: #4e4646;
+  font-family: "Roboto";
+  line-height: 25px;
+  text-shadow: none;
+  text-align: center;
+  font-size: 21px;
+  margin: auto;
+}
+.footer {
+  bottom: 0;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  padding: 0 20px 0px 20px;
+}
+
+.footer > div {
+  position: relative;
+  width: 33.3333333%;
+  height: 100%;
+  line-height: 70px;
+  margin: auto;
+}
+
+.footer-12.tag {
+  margin: auto;
+  color: rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+  opacity: 1;
+  font-family: Rationale;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+.footer-12.nave {
+  display: flex;
+  flex-direction: row;
+}
+
+.nave > .dots {
+  display: inline-block;
+  margin: auto;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+  border-radius: 500px;
+  background-color: rgba(
+    77.56250202655792,
+    69.80625182390213,
+    69.80625182390213,
+    1
+  );
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+}
+.dots.active {
+  background-color: white;
+}
+.linker {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding: 7px;
+}
+@media only screen and (max-width: 600px) {
+  section,
+  .header {
+    flex-direction: column !important;
+    justify-content: center;
+    padding: 20px 10px 5px 10px;
+  }
+  .header-13,
+  .header-12,
+  section > div {
+    width: 100% !important;
+    justify-content: center;
+  }
+  .header-12 {
+    padding-right: 20px;
+    text-align: center;
+  }
+  .slides {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .middle-12.center {
+    padding: 20% 10px 0px 10px;
+    height: auto;
+  }
+  .middle-12.floating-image {
+    height: auto !important;
+  }
+  .tag {
+    white-space: wrap;
+    line-height: 30px !important;
+    word-wrap: break-word !important;
+    text-align: left !important;
+  }
+}
