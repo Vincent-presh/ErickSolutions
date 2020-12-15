@@ -149,6 +149,7 @@ img {
     opacity: 0;
     display: none;
     visibility: hidden;
+    margin: 0;
   }
 }
 @keyframes Fadeout {
