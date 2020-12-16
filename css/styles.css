@@ -396,6 +396,10 @@ input.submit:hover {
   cursor: pointer;
 }
 
+.output {
+  margin: 4% 10%;
+}
+
 @media only screen and (max-width: 600px) {
   section {
     flex-direction: column !important;

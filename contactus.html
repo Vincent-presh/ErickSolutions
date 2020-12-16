@@ -5,14 +5,6 @@
     <title>Erick Solutions</title>
     <meta name="description" content="Erick Solutions" />
     <meta name="author" content="Erick Solutions" />
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -56,13 +48,14 @@
     </div>
     <div class="contact-con">
         <div class="container form">
-            <form>
-                <input placeholder="First Name or Business Name" type="text" required/>
-                <input placeholder="Email" type="email" required/>
-                <textarea class="descr" placeholder="Project Description" required></textarea>
-                <input class="" placeholder="Budget Range in Naira" type="number" required/>
+            <form id="form"  onsubmit="return false">
+                <input class="name" name="name" placeholder="First Name or Business Name" type="text" required/>
+                <input class="email" placeholder="Email" type="email" name="email" required/>
+                <textarea class="descr" placeholder="Project Description" name="desciption" required></textarea>
+                <input class="budget" placeholder="Budget Range in Naira" name="budget" type="number" min="49999" required/>
                 <input class="submit" placeholder="Submit" type="submit"/>
             </form>
+            <div class="output"> </div>
         </div>
     </div>
 
@@ -88,4 +81,15 @@
     });
   </script>
 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script defer src="app.js"></script>
+  
 </html>
